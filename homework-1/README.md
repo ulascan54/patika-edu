@@ -6,7 +6,7 @@ Bu repo [Kodluyoruz](https://www.kodluyoruz.com) Django eğitiminde oluşturduğ
 
 Öncelikle projeyi clonlayın.(Buraya sizin reponuzdan aldığınız link gelecek)
 
-'git clone  https://github.com/ulascan54/python-django-edu.git'
+`git clone  https://github.com/ulascan54/python-django-edu.git`
 
 ## Usage
 
@@ -14,10 +14,10 @@ Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 <br>
 Linux için:
 
-'''
+```
     cd kodluyoruzilkrepo
     code .
-'''
+```
 
 ## Contributing
 
