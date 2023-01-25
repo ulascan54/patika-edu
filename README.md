@@ -10,4 +10,4 @@
 | 7   | CSS          | [Ödev 1](https://app.patika.dev/courses/css/odev1)                      | [Live](https://ulascan54.github.io/patika-edu/css/1-hw/)     | [Code](https://github.com/ulascan54/patika-edu/tree/main/css/1-hw)      |
 | 8   | CSS          | [Ödev 2](https://app.patika.dev/courses/css/odev2)                      | [Live](https://ulascan54.github.io/patika-edu/css/2-hw/)     | [Code](https://github.com/ulascan54/patika-edu/tree/main/css/2-hw)      |
 | 9   | CSS          | [Ödev 3](https://app.patika.dev/courses/css/odev3)                      | [Live](https://ulascan54.github.io/patika-edu/css/3-hw/)     | [Code](https://github.com/ulascan54/patika-edu/tree/main/css/3-hw)      |
-| 10  | CSS          | [Ödev 3](https://app.patika.dev/courses/bootstrap/odev1)                | [Live](https://ulascan54.github.io/patika-edu/bootsrap/hw-1) | [Code](https://github.com/ulascan54/patika-edu/tree/main/bootsrap/hw-1) |
+| 10  | Bootsrap     | [Ödev 3](https://app.patika.dev/courses/bootstrap/odev1)                | [Live](https://ulascan54.github.io/patika-edu/bootsrap/hw-1) | [Code](https://github.com/ulascan54/patika-edu/tree/main/bootsrap/hw-1) |
