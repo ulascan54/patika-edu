@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+ul,ol{
+    list-style-position: inside;
+}
+span{
+    color:rgb(170, 170, 25);
+    font-weight: bold;
+}
+h2{
+    color: purple;
+}
+a{
+    margin:0 10px;
+}
+h1{
+    color: red;
+}
+img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+}
+ol>li{
+    margin-bottom: 20px;
+}
+.text-left{
+    text-align: left;
+}
+
+h5{
+    color: purple;
+    font-weight: bold;
+}
