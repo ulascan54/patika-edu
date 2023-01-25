@@ -72,3 +72,13 @@ img{
 .icon-p a{
     color: rgb(176, 176, 176);
 }
+.card-footer{
+    background-color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; justify-content: space-between;
+}
+.card-footer a{
+    font-size: small;
+}
