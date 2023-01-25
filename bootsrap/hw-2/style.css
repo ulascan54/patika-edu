@@ -1,0 +1,74 @@
+body{
+    background-color: #e5e5e8;
+}
+.logo{
+    width: 200px;
+}
+.logo>img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    position: center center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    border: 1px solid rgb(196, 196, 196);
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.hero{
+    position: relative;
+    top:40px;
+}
+
+.search-button{
+    position: absolute;
+    top:-7px;
+    left:21%;
+}
+input[type=text]{
+    text-align:center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type=text]:hover + .search-button{
+    display: none !important;
+}
+
+img{
+    object-fit: cover;
+    object-position: center center;
+    max-height: 400px;
+}
+
+.card-header img,.icon-p img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.icon-p{
+    font-size:small;
+}
+
+.icon-p img{
+    width: 25px;
+    height: 25px;
+}
+.icon-p a{
+    color: rgb(176, 176, 176);
+}
