@@ -45,7 +45,7 @@ img{
     max-height: 400px;
 }
 
-.card-header img,.icon-p img{
+.card-header img,.icon-p img, .right-i img{
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -92,4 +92,28 @@ img{
 .story{
     overflow: hidden;
     scroll-behavior: auto;
+}
+
+.right-section{
+    background-color: #e5e5e8;
+    border:none;
+    margin-top: 40px;
+    display: block;
+}
+.pt-4 p, .pt-4 a{
+    font-size: small;
+    color:black;
+}
+
+
+.right-i img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.right-comp{
+    position: fixed;
+    left: 20%;
 }
