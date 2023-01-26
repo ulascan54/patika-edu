@@ -113,3 +113,21 @@ body{
   font-size: small;
   border-bottom: 1px solid rgb(216, 216, 216);
 }
+.groups{
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(216, 216, 216);
+  margin-top: 15px;
+  font-size: small;
+  padding: 12px;
+}
+.groups>p{
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.groups p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
