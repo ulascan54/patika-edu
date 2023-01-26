@@ -197,3 +197,30 @@ body{
   height: 1px;
   background-color: rgb(216, 216, 216);
 }
+.main-c-header{
+  font-size: small !important;
+}
+
+.main-c-header p{
+  padding: 0;
+  margin: 0;
+}
+.main-c-header img{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.main-c-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.main-card{
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(216, 216, 216);
+}
