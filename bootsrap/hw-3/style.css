@@ -1,0 +1,16 @@
+.logo-text{
+    top: 7px;
+    left: 37px;
+}
+
+.m-header{
+    position: fixed;
+    width: 100%;
+}
+
+.h-button{
+    border-radius: 20px;
+}
+li{
+    margin-right: 20px;
+}
