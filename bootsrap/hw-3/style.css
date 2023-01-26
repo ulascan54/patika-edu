@@ -4,13 +4,40 @@
 }
 
 .m-header{
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
+    background-color: #FFBF17;
+    z-index: 20;
+
 }
 
 .h-button{
     border-radius: 20px;
 }
-li{
+.m-header li{
     margin-right: 20px;
+}
+.hero{
+    background-color: #FFBF17;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+}
+.hero h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+
+.hero p{
+    font-size: 1.5rem;
+}
+
+.hero a{
+    margin-top: 40px;
+    width: 200px;
+}
+
+.hero img{
+    width: 100%;
 }
