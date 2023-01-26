@@ -180,3 +180,20 @@ body{
   border-radius: 20px;
   cursor: pointer;
 }
+
+.hr{
+  padding: 7px 0;
+}
+
+.hr p{
+  width: 35%;
+  margin: 0;
+  padding:0;
+  font-size: smaller;
+}
+
+.hr-p{
+  width: 65% !important;
+  height: 1px;
+  background-color: rgb(216, 216, 216);
+}
