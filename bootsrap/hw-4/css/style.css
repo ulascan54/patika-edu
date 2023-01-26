@@ -1,6 +1,11 @@
 body{
   background-color: #F3F2EE !important;
 }
+.m-header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
 
 .search-input{
   width: 200px !important;
@@ -130,4 +135,48 @@ body{
 .groups p{
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.tweet{
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(216, 216, 216);
+  padding: 15px;
+}
+
+.tweet img{
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.tweet input{
+  height: 40px;
+  width: 100%;
+  border-radius: 60px;
+  border: 1px solid rgb(216, 216, 216);
+  padding-left: 15px;
+  font-weight: bold;
+}
+.tweet div{
+  align-items: center;
+}
+
+.button-t{
+  display: flex;
+  align-items: center;
+}
+.buttons-t{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.button-t:hover{
+  background-color: rgb(216, 216, 216);;
+  border-radius: 20px;
+  cursor: pointer;
 }
