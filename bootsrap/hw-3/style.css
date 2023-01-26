@@ -56,3 +56,8 @@
     font-weight: bold;
     color: rgb(209, 209, 209)
 }
+
+.right-section{
+    position: sticky !important;
+    top: 20;
+}
