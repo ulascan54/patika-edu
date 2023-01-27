@@ -20,7 +20,7 @@
 
 #### Cevap :
 
-- Sort türüne göre aşamaları :
+- Insert Sort türüne göre aşamaları :
 
   1.  Aşama => **22, 27, 16, 2, 18, 6**
   2.  Aşama => **16, 22, 27, 2, 18, 6**
