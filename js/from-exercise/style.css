@@ -1,0 +1,104 @@
+body {
+    background-color: #ffd;
+    padding: 20px;
+}
+
+#userForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    justify-content: space-between;
+    background-color: #efefef;
+}
+
+#buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
+#formDiv {
+    display: block;
+    max-width: 250px;
+}
+
+#results {
+    background-color: rgb(246, 236, 236);
+    display: block;
+    margin-left: 10px;
+    width: 300px;
+    height: auto;
+    min-height: 220px;
+    border-color: rgb(98, 104, 104);
+    border-width: 5px;
+    border-radius: 5px;
+
+}
+
+#results li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -25px;
+    margin-right: 15px;
+    padding-left: 5px;
+    border: 1px solid transparent;
+    list-style-position: inside;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+#results ul li:hover {
+    border-color: #F00;
+    border-radius: 5px;
+}
+
+#wholeBody {
+    display: flex;
+    flex-direction: row;
+}
+
+#resultsTitle {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e2;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.preventSelection {
+    /* prevent text selection ↓ */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.alert {
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 190px;
+    left: 0px;
+    top: -147px;
+    box-shadow: 5px 5px;
+}
+
+.closeButton {
+    align-items: flex-end;
+    text-align: right;
+    margin-top: -13px;
+    margin-right: -15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.closeButton :hover{
+    color: red;
+}
