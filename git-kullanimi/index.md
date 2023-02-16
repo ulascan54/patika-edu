@@ -10,3 +10,15 @@
 - git revert (commitid): girilen id deki değişikliği geriye çeker
 - git reset --hard (commitid) : seçilen iddeki zamana gider ve aradaki herşeyi siler.
 - git diff (commitid)..(commitid) dosyadı : iki komit arasındaki farklılıkları getirir.
+
+## Branch işlemleri stash kavramı
+
+- git branch: var olan branchleri gösterir
+- git branch (custom branch name): yeni bir branch oluşturur
+- git branch git checkout (branchname): girilen branche geçiş yapar
+- git checkout -b branchname: yeni branch oluşturup ona geçiş yapar
+- git branch -D branchname: o branch i siler
+- git stach: son committeki tüm veriler stachta saklanır
+- git stach list : eklenen commitler gözükür
+- git stach clear: eklenen veriler silinir
+- git stach pop : en üstteki kaydı geri getirir.
