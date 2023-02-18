@@ -21,4 +21,11 @@
 - git stach: son committeki tüm veriler stachta saklanır
 - git stach list : eklenen commitler gözükür
 - git stach clear: eklenen veriler silinir
-- git stach pop : en üstteki kaydı geri getirir.
+- git stach pop : en üstteki kaydı geri getirir listeden kaldırır.
+- git stach apply : en üstteki kaydı geri getirir listeden kaldırmaz.
+
+## Merge, Rebase, Conflict
+
+- git merge brnachname: bulunduğu brnachle girilen branchi birleştirir
+- git merge --squash branch name: direk branchleri birleştirir ve commit yaptırtıt
+- git rebase branchname: branch eklenir
