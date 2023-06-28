@@ -60,3 +60,6 @@ backup*/
 /config/
 /deploy/
 /logs/
+
+
+*.ipynb
