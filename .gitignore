@@ -1,0 +1,62 @@
+/.ipynb_checkpoints/
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Yorumlar için örnekler
+
+# Bu bir yorumdur
+
+# Dizinleri yoksayma
+bin/
+build/
+dist/
+
+# Sistem dosyaları
+Thumbs.db
+.DS_Store
+
+# Geçici dosyalar
+*.tmp
+*.bak
+
+# Log dosyaları
+*.log
+
+# Derleme dosyaları
+*.o
+*.pyc
+*.class
+
+# Özel proje dosyaları
+myproject.config
+
+# Ortam değişkenleri
+.env
+
+# Paket yöneticisi tarafından oluşturulan dosyalar
+/node_modules/
+/bower_components/
+
+# İmaj dosyaları
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Yedeklemeler
+backup*/
+
+# Derleme çıktıları
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE ve editör özel dosyaları
+.vscode/
+.idea/
+
+# Proje özel dosyaları ve klasörleri
+/config/
+/deploy/
+/logs/
