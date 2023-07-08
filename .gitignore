@@ -35,6 +35,7 @@ myproject.config
 
 # Paket yöneticisi tarafından oluşturulan dosyalar
 /node_modules/
+node_modules/
 /bower_components/
 
 # İmaj dosyaları
