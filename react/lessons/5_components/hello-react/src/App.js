@@ -1,11 +1,17 @@
 import './App.css';
+// import React from 'react';
 import Header from './components/Header'
 function App(){
+  // return React.createElement('div',null,'hello')
   return(
-    <div>
-      <h1>Hello React</h1>
+    <>
+      <h1 className='xyz'>Hello React</h1>
       <Header/>
-    </div>
+      <label htmlFor='myinput'>
+        name
+        <input id='myinput' />
+      </label>
+    </>
   )
 }
 
