@@ -4,6 +4,7 @@ import Header from './components/Header'
 
 const name ='Ulas'
 const surName='can'
+const isLoggedIn=true;
 function App(){
   // return React.createElement('div',null,'hello')
   return(
@@ -14,6 +15,10 @@ function App(){
         {/* {name}{surName} */}
         {`my name is ${name} surname is ${surName}`}
         <input id='myinput' />
+        <h1>{isLoggedIn && surName}</h1>
+        <h1>{!isLoggedIn && name}</h1>
+
+        <h1>{isLoggedIn ?  name : surName}</h1>
       </label>
     </>
   )
