@@ -1,5 +1,5 @@
-function Header(){
-    return <div>Selam ben header</div>
+function Header() {
+  return <div>Selam ben header</div>
 }
 
 export default Header
