@@ -1,0 +1,28 @@
+.container{
+    width: 400px;
+}
+.container button{
+    cursor: pointer;
+}
+
+.container li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    align-items: center;
+}
+
+.container li input[type=text]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 85%;
+}
+
+.container li.done input[type=text]{
+    text-decoration:line-through;
+}

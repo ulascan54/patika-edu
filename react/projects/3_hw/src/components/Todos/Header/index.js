@@ -1,7 +1,11 @@
-import React from "react"
+import "./style.css"
 
 function Header() {
-  return <div>Header</div>
+  return (
+    <div>
+      <h1>todos</h1>
+    </div>
+  )
 }
 
 export default Header
