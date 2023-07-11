@@ -14,20 +14,41 @@ function Content() {
 
   return (
     <div className="container">
+      <form>
+        <input
+          className="toggle-new"
+          type="checkbox"
+          onClick={(e) => {
+            console.log(e)
+            const newTodos = [...todos]
+            newTodos.forEach((element) => {
+              if (!e.target.checked) element.state = true
+              else element.state = false
+            })
+            setTodos([...newTodos])
+          }}
+        />
+        <input
+          className="new-todo"
+          placeholder="What needs to be done?"
+          autoFocus
+        />
+      </form>
       <ul>
         {todos.map((todo, idx) => {
           return (
             <li key={idx} className={`view ${todo.state ? "do" : "done"}`}>
               <input
-                className="toggle"
-                type="checkbox"
-                onClick={(e) => {
+                checked={!todo.state ? true : false}
+                onChange={(e) => {
                   todos[idx] = {
                     name: todos[idx].name,
                     state: !todos[idx].state,
                   }
                   setTodos([...todos])
                 }}
+                className="toggle"
+                type="checkbox"
               />
               <input
                 className="toggle"
