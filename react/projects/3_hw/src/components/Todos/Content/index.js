@@ -4,10 +4,12 @@ import Footer from "../Footer"
 function Content() {
   const [newTodo, setNewTodo] = useState({ name: "", state: "" })
   const [todos, setTodos] = useState([
-    { name: "todo1", state: true },
-    { name: "todo2", state: true },
-    { name: "todo3", state: false },
-    { name: "todo4", state: true },
+    { name: "Taste JavaScript", state: false },
+    { name: "Code furiously", state: false },
+    { name: "Promote Mavo", state: true },
+    { name: "Give talks", state: true },
+    { name: "Write tutorials", state: true },
+    { name: "Have a life!", state: false },
   ])
 
   return (
