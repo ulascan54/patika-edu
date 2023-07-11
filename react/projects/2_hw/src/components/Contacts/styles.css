@@ -1,0 +1,51 @@
+#container{
+    width: 400px;
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#container input, #container button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    outline: 0;
+
+}
+
+#containerr input:focus{
+    border: 0px;
+}
+
+#container button{
+    background-color: #888;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#container ul, #container li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y:scroll ;
+}
+
+.list{
+    padding: 10px !important;
+    height: 250px;
+}
+
+.list>li{
+    padding: 4px !important;
+    margin-bottom: 2px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list>li:nth-child(even){background-color: #f2f2f2;}
+.list>li:nth-child(odd){background-color: #8c8c8c; color: white;}
