@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import "./style.css"
+import Footer from "../Footer"
 function Content() {
+  const [newTodo, setNewTodo] = useState({ name: "", state: "" })
   const [todos, setTodos] = useState([
     { name: "todo1", state: true },
     { name: "todo2", state: true },
@@ -8,18 +10,20 @@ function Content() {
     { name: "todo4", state: true },
   ])
 
-  useEffect(() => {
-    console.log(todos)
-  })
-
   return (
     <div className="container">
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          if (newTodo.name === "" || newTodo.state === "") return false
+          setTodos([...todos, newTodo])
+          setNewTodo({ name: "", state: "" })
+        }}
+      >
         <input
           className="toggle-new"
           type="checkbox"
           onClick={(e) => {
-            console.log(e)
             const newTodos = [...todos]
             newTodos.forEach((element) => {
               if (!e.target.checked) element.state = true
@@ -32,6 +36,10 @@ function Content() {
           className="new-todo"
           placeholder="What needs to be done?"
           autoFocus
+          value={newTodo.name}
+          onChange={(e) => {
+            setNewTodo({ name: e.target.value, state: true })
+          }}
         />
       </form>
       <ul>
@@ -57,7 +65,6 @@ function Content() {
                 onChange={(e) => {
                   todos[idx] = { name: e.target.value, state: todos[idx].state }
                   setTodos([...todos])
-                  console.log(idx)
                 }}
               />
               <button
@@ -74,6 +81,7 @@ function Content() {
           )
         })}
       </ul>
+      <Footer todos={todos} setTodos={setTodos} />
     </div>
   )
 }
