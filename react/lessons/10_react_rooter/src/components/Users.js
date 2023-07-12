@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { NavLink, Route, Routes } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import User from "./User"
+
 function Users() {
   const [users, setUsers] = useState([])
   const [loading, setLoading] = useState(true)
@@ -18,12 +20,16 @@ function Users() {
       {loading && <div>Loading ....</div>}
 
       <ul>
-        {users.map((user) => (
+        {users?.map((user) => (
           <li key={user.id}>
-            <Link to={`/user/${user.id}`}>{user.name}</Link>
+            <NavLink to={`${user.id}`}>{user.name}</NavLink>
           </li>
         ))}
       </ul>
+
+      <Routes>
+        <Route path=":id" element={<User />} />
+      </Routes>
     </div>
   )
 }

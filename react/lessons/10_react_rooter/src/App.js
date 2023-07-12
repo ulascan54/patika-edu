@@ -1,7 +1,6 @@
 import Home from "./components/Home"
 import About from "./components/About"
 import Users from "./components/Users"
-import User from "./components/User"
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"
 
 function App() {
@@ -25,8 +24,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/user/:id" element={<User />} />
+          <Route path="/users/*" element={<Users />} />
         </Routes>
       </div>
     </Router>
