@@ -24,9 +24,12 @@ function User() {
           id: <strong>{id}</strong>
           <code>{JSON.stringify(user)}</code>
           <br />
-          <Link to={`/user/${parseInt(id) + 1}`}>
-            Next User (id:{parseInt(id) + 1})
-          </Link>
+          {parseInt(id) > 1 && (
+            <Link to={`/users/${parseInt(id) + -1}`}>Previus User</Link>
+          )}
+          {parseInt(id) < 10 && (
+            <Link to={`/users/${parseInt(id) + 1}`}>Next User</Link>
+          )}
         </div>
       )}
     </div>
