@@ -22,7 +22,14 @@ function Users() {
       <ul>
         {users?.map((user) => (
           <li key={user.id}>
-            <NavLink to={`${user.id}`}>{user.name}</NavLink>
+            <NavLink
+              to={`${user.id}`}
+              className={({ isActive }) =>
+                isActive ? "activeClassName" : undefined
+              }
+            >
+              {user.name}
+            </NavLink>
           </li>
         ))}
       </ul>

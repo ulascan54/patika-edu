@@ -1,7 +1,13 @@
 import Home from "./components/Home"
 import About from "./components/About"
 import Users from "./components/Users"
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"
+import "./App.css"
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Routes,
+} from "react-router-dom"
 
 function App() {
   return (
@@ -10,13 +16,34 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "activeClassName" : undefined
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "activeClassName" : undefined
+                }
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <NavLink
+                to="/users"
+                className={({ isActive }) =>
+                  isActive ? "activeClassName" : undefined
+                }
+              >
+                Users
+              </NavLink>
             </li>
           </ul>
         </nav>
