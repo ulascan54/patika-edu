@@ -1,6 +1,7 @@
 import Home from "./components/Home"
 import About from "./components/About"
 import Users from "./components/Users"
+import Error404 from "./components/Error404"
 import "./App.css"
 import {
   BrowserRouter as Router,
@@ -52,6 +53,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/users/*" element={<Users />} />
+          <Route path="/*" element={<Error404 />} />
         </Routes>
       </div>
     </Router>
