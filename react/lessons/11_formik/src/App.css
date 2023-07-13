@@ -54,3 +54,12 @@ p{
   top: 0;
   left:0;
 }
+
+.error{
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+}

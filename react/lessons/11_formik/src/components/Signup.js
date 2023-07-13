@@ -2,17 +2,18 @@ import React from "react"
 import { useFormik } from "formik"
 import validations from "./validations"
 function Signup() {
-  const { handleSubmit, handleChange, values } = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-      passwordConfirm: "",
-    },
-    onSubmit: (values) => {
-      console.log(values)
-    },
-    validationSchema: validations,
-  })
+  const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
+    useFormik({
+      initialValues: {
+        email: "",
+        password: "",
+        passwordConfirm: "",
+      },
+      onSubmit: (values) => {
+        console.log(values)
+      },
+      validationSchema: validations,
+    })
   return (
     <div>
       <div>
@@ -36,25 +37,42 @@ function Signup() {
           </div> */}
           <div>
             <label htmlFor="email">Email:</label>
-            <input name="email" onChange={handleChange} value={values.email} />
+            <input
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.email}
+            />
+
+            {errors.email && touched.email && (
+              <div className="error">{errors.email}</div>
+            )}
           </div>
           <div>
             <label htmlFor="password">Password:</label>
             <input
               name="password"
               type="password"
+              onBlur={handleBlur}
               onChange={handleChange}
               value={values.password}
             />
+            {errors.password && touched.password && (
+              <div className="error">{errors.password}</div>
+            )}
           </div>
           <div>
             <label htmlFor="passwordConfirm">Password Confirm:</label>
             <input
               name="passwordConfirm"
-              type="passwordConfirm"
+              type="password"
+              onBlur={handleBlur}
               onChange={handleChange}
               value={values.passwordConfirm}
             />
+            {errors.passwordConfirm && touched.passwordConfirm && (
+              <div className="error">{errors.passwordConfirm}</div>
+            )}
           </div>
           {/* <div>
             <label htmlFor="gender">Gender:</label>
