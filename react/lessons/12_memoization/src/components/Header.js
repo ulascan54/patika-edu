@@ -1,8 +1,13 @@
 import { memo } from "react"
 
-function Header({ count }) {
+function Header({ count, data }) {
   console.log("Header re-rednered")
-  return <div>Header - {count}</div>
+  return (
+    <div>
+      <p>Header - {count}</p>
+      <code>{JSON.stringify(data)}</code>
+    </div>
+  )
 }
 
 export default memo(Header)
