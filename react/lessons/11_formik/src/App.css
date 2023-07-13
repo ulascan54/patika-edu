@@ -47,3 +47,7 @@ input[type="checkbox"]{
   display: inline-block;
   width: auto;
 }
+
+p{
+  width: 100px;
+}
