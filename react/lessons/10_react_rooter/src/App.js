@@ -1,7 +1,8 @@
 import Home from "./components/Home"
 import About from "./components/About"
 import Users from "./components/Users"
-import Error404 from "./components/Error404"
+import Error404 from "./components/Error404page"
+
 import "./App.css"
 import {
   BrowserRouter as Router,
