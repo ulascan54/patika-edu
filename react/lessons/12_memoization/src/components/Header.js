@@ -1,11 +1,13 @@
 import { memo } from "react"
 
-function Header({ count, data }) {
+function Header({ count, increment }) {
   console.log("Header re-rednered")
   return (
     <div>
       <p>Header - {count}</p>
-      <code>{JSON.stringify(data)}</code>
+      <button onClick={increment}>click</button>
+
+      {/* <code>{JSON.stringify(data)}</code> */}
     </div>
   )
 }
