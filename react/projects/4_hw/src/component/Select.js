@@ -1,14 +1,16 @@
 import { useWeather } from "../context/WeatherContext"
 
 function Select() {
-  const { citys } = useWeather()
-
+  const { citys, setSelectedCity } = useWeather()
+  const handleChange = (e) => {
+    setSelectedCity(e.target.value)
+  }
   return (
     <div>
       <label htmlFor="citys">Your City</label>
 
-      <select name="citys" id="citys">
-        <option value="volvo">Select</option>
+      <select name="citys" id="citys" onChange={handleChange}>
+        <option value="null">Select</option>
         {citys.map((city) => (
           <option key={city.id} value={city.name}>
             {city.name}
