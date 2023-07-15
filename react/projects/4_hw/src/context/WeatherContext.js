@@ -6,19 +6,18 @@ const WeatherContext = createContext()
 const WeatherProvider = ({ children }) => {
   const [selectedCity, setSelectedCity] = useState(null)
 
-  if (navigator.geolocation) {
+  if (navigator.geolocation && selectedCity === null) {
     navigator.geolocation.getCurrentPosition(function (position) {
-      const latitude = position.coords.latitude // Enlem bilgisini al
-      const longitude = position.coords.longitude // Boylam bilgisini al
+      const lat = position.coords.latitude
+      const long = position.coords.longitude
 
-      const url =
-        "https://geocode.xyz/" + latitude + "," + longitude + "?json=1"
+      const url = "https://geocode.xyz/" + lat + "," + long + "?json=1"
       const xhr = new XMLHttpRequest()
       xhr.open("GET", url, true)
       xhr.onload = function () {
         if (xhr.status == 200) {
           const response = JSON.parse(xhr.responseText)
-          const city = response.city // Şehir bilgisini al
+          const city = response.city
           if (city !== "Throttled! See geocode.xyz/pricing") {
             setSelectedCity(city)
           }
