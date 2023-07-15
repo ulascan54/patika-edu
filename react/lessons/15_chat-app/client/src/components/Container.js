@@ -1,12 +1,16 @@
-import React from "react"
+import { useEffect } from "react"
 import ChatForm from "./ChatForm"
 import ChatList from "./ChatList"
-import { init } from "../socketApi"
-import { useEffect } from "react"
-
+import { useChat } from "../context/ChatContext"
+import { init, subscribeNewChat } from "../socketApi"
 function Container() {
+  const { setMessages } = useChat()
   useEffect(() => {
     init()
+
+    subscribeNewChat((message) => {
+      setMessages((prevState) => [...prevState, { message }])
+    })
   }, [])
   return (
     <div className="App">
