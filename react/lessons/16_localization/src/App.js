@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import "./App.css"
 import { IntlProvider, FormattedMessage, FormattedNumber } from "react-intl"
 const messages = {
-  "tr-TR": { title: "merhaba", description: "3 yeni mesajınız var" },
-  "en-US": { title: "hello", description: "you have 3 new messages" },
+  "tr-TR": { title: "merhaba", description: "{count} yeni mesajınız var" },
+  "en-US": { title: "hello", description: "you have {count} new messages" },
 }
 function App() {
   const defaultLocale = navigator.language
@@ -19,7 +19,7 @@ function App() {
       <IntlProvider locale={locale} messages={messages[locale]}>
         <FormattedMessage id="title" />
         <p>
-          <FormattedMessage id="description" />
+          <FormattedMessage id="description" values={{ count: 5 }} />
         </p>
         <button onClick={() => setLocale("tr-TR")}>TR</button>
         <button onClick={() => setLocale("en-US")}>EN</button>
