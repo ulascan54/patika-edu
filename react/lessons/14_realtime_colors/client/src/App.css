@@ -14,3 +14,10 @@
 .palatte button{
   margin-top: 10px;
 }
+
+h1{
+  padding: 4px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 3px;
+}
