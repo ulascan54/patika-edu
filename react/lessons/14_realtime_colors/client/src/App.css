@@ -1,0 +1,16 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.palatte{
+  display: flex;
+  flex-direction: column;
+}
+
+.palatte button{
+  margin-top: 10px;
+}
