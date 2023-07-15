@@ -4,11 +4,34 @@ import axios from "axios"
 const WeatherContext = createContext()
 
 const WeatherProvider = ({ children }) => {
+  const [selectedCity, setSelectedCity] = useState(null)
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      const latitude = position.coords.latitude // Enlem bilgisini al
+      const longitude = position.coords.longitude // Boylam bilgisini al
+
+      const url =
+        "https://geocode.xyz/" + latitude + "," + longitude + "?json=1"
+      const xhr = new XMLHttpRequest()
+      xhr.open("GET", url, true)
+      xhr.onload = function () {
+        if (xhr.status == 200) {
+          const response = JSON.parse(xhr.responseText)
+          const city = response.city // Şehir bilgisini al
+          if (city !== "Throttled! See geocode.xyz/pricing") {
+            setSelectedCity(city)
+          }
+        }
+      }
+      xhr.send()
+    })
+  }
+
   const baseUrlGeo = process.env.REACT_APP_BASEURL_GEO
   const baseUrlWeather = process.env.REACT_APP_BASEURL_WEATHER
   const apiKey = process.env.REACT_APP_API_KEY
   const [citys, setCitys] = useState([])
-  const [selectedCity, setSelectedCity] = useState("istanbul")
   const [cityDetails, setCityDetails] = useState({
     lat: "",
     lon: "",
@@ -24,31 +47,36 @@ const WeatherProvider = ({ children }) => {
       })
   }, [])
   useEffect(() => {
-    axios(`${baseUrlGeo}/1.0/direct?q=${selectedCity}&limit=5&appid=${apiKey}`)
-      .then((res) => {
-        console.log(res.data)
-        res.data.forEach((element) => {
-          if (element.country === "TR") {
-            setCityDetails({
-              name: selectedCity,
-              lat: element.lat,
-              lon: element.lon,
-            })
-          }
+    if (selectedCity !== null || selectedCity !== "null") {
+      axios(
+        `${baseUrlGeo}/1.0/direct?q=${selectedCity}&limit=5&appid=${apiKey}`
+      )
+        .then((res) => {
+          res.data.forEach((element) => {
+            if (element.country === "TR") {
+              setCityDetails({
+                name: selectedCity,
+                lat: element.lat,
+                lon: element.lon,
+              })
+            }
+          })
         })
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
   }, [selectedCity])
 
   useEffect(() => {
-    axios(`${baseUrlWeather}?q=${cityDetails.name}&appid=${apiKey}&lang=TR`)
-      .then((res) => {
-        const newArray = res.data.list.splice(0, 7)
-        setWeatherData(newArray)
-      })
-      .catch((err) => console.log(err))
+    if (cityDetails.name !== undefined) {
+      axios(`${baseUrlWeather}?q=${cityDetails.name}&appid=${apiKey}&lang=TR`)
+        .then((res) => {
+          const newArray = res.data.list.splice(0, 7)
+          setWeatherData(newArray)
+        })
+        .catch((err) => console.log(err))
+    }
   }, [cityDetails, selectedCity])
 
   const values = {

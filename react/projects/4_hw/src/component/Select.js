@@ -7,7 +7,7 @@ function Select() {
   }
   return (
     <div>
-      <label htmlFor="citys">Your City</label>
+      <label htmlFor="citys">Select Your City : </label>
 
       <select name="citys" id="citys" onChange={handleChange}>
         <option value="null">Select</option>

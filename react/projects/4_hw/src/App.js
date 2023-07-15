@@ -5,8 +5,10 @@ import Detail from "./component/Detail"
 function App() {
   return (
     <WeatherProvider>
-      <Select />
-      <Detail />
+      <div className="App">
+        <Select />
+        <Detail />
+      </div>
     </WeatherProvider>
   )
 }
