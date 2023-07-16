@@ -1,9 +1,56 @@
-/* add css module styles here (optional) */
+.btn{
+  padding: 7px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  border:none;
+  background-color: transparent;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  transition: all 0.1s linear;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+
+.btnPrimary {
+  background-color: #1677FF;
+  color: #fff;
+}
+
+
+.btnPrimary:hover {
+  background-color: #80aff1;
+  color: #fff;
+}
+
+
+.btnDefault {
+  border: 1px solid #ccc;
+}
+
+.btnDefault:hover {
+  border: 1px solid #80aff1;
+  color: #80aff1;
+}
+
+
+.btnDashed {
+  border: 1px dashed #ccc;
+}
+.btnDashed:hover {
+  border: 1px dashed #80aff1;
+  color: #80aff1;
+}
+
+.btnText:hover {
+  background-color: #ccc;
+}
+
+
+.btnLink {
+  color:#1677FF
+}
+.btnLink:hover {
+  color:#80aff1
 }
