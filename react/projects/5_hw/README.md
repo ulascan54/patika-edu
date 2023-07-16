@@ -17,6 +17,6 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 ## Gereksinimler
 
 - [x] Başlık kısmının başarılı bir şekilde render edildiğini kontrol edecek olan test kodunu yazın.
-- [] Uygulama ilk açıldığında emoji listesinin başarılı bir şekilde render edildiğini kontrol edecek olan test kodunu yazın.
+- [x] Uygulama ilk açıldığında emoji listesinin başarılı bir şekilde render edildiğini kontrol edecek olan test kodunu yazın.
 - [] Bir filtreleme işlemi yapıldığında, emoji listesinin bu filtreye uygun şekilde yeniden render edildiğini kontrol edecek olan test kodunu - - yazın.
 - [] Liste üzerinden herhangi emojiye tıklandığında, ilgili emojinin kopyalandığını kontrol edecek olan test kodunu yazın.
