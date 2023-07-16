@@ -7620,9 +7620,9 @@ react-is@^18.0.0:
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
 react-publishing-ulas@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-publishing-ulas/-/react-publishing-ulas-1.0.0.tgz#b39c429abd4a08ce66249fd155f1c92cf6929eca"
-  integrity sha512-FPtoS+5Kk89Np9iY7CfJiHaYgOXvhUmZhh4aJ+ccVoZt8NHQYMFZSny+sPnVLDbI8LBXjOngvbcUvFbKmDDXig==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-publishing-ulas/-/react-publishing-ulas-1.1.0.tgz#655de37eb4bac2d47d9379a40cee47b953375dad"
+  integrity sha512-TGhj20tVBCZVNHGEjJoQwSsttIOik710jNWedqXWUm6FeRlxxedOcX2HhHsUJjN44GyuJeiqGD+AtGMKAWr7Cg==
 
 react-refresh@^0.11.0:
   version "0.11.0"
