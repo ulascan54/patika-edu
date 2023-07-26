@@ -41,7 +41,7 @@ node_modules/
 # İmaj dosyaları
 *.jpg
 *.jpeg
-*.png
+
 *.gif
 
 # Yedeklemeler
