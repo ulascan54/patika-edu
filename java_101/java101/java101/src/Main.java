@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,5 +45,26 @@ public class Main {
         double vDouble= 3.14;
         System.out.println(vDouble);
 
+        //char,boolean
+        char vChar = 'b';//char kullanılırken tek tırnak kullanılır
+        char v2Char=98;// asci kodu ilede b bastırabiliriz
+        System.out.println(vChar);
+        System.out.println(v2Char);
+
+        char c1 ='J';
+        char c2 ='A';
+        char c3 ='V';
+        char c4 ='A';
+        System.out.println(""+c1+c2+c3+c4);// bu yapının hazır haline string denir ancak javada doğrudan bulunmaz
+
+        //boolean true-false, 1-0, var-yok
+        boolean dogru= true;
+        boolean yanlis=false;
+        System.out.println(dogru);
+        System.out.println(yanlis);
+
+        // string sınıfları
+        String vStr= "Java 101 patikası";
+        System.out.println(vStr);
     }
 }
