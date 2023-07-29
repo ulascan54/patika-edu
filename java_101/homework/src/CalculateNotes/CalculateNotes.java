@@ -26,7 +26,7 @@ public class CalculateNotes {
         muzik = input.nextFloat();
 
         double ort = (fizik + kimya +turkce +muzik + tarih +mat)/6 ;
-        System.out.println("Ortalamanız: " +ort);
+        System.out.println("Ortalamanız: " +ort + (ort >60 ? " \nDurumunuz: geçtiniz" : "\nDurumunuz: kaldınız")) ;
 
     }
 }
