@@ -16,12 +16,15 @@ public class GetNumbers {
         int total=0;
         int count=0;
         for (int i=1;i<=n;i++){
+            if (i%2==0)
+                System.out.print(i+",");
+            //homework :
             if (i%4 == 0 || i+3==0){
                 total += i;
                 count++;
             }
         }
-        System.out.println("3 ve 4 bölünen sayıların ortalaması :" + total/count);
+        System.out.println("\n3 ve 4 bölünen sayıların ortalaması :" + total/count);
 
 
     }
